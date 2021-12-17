@@ -28,11 +28,11 @@ The task is to implement the REST service that exposes the /products endpoint,
     - adds the given product object to the collection of products and assigns a unique integer id to it. The first created product must have id 1, the second one 2, and so on.
     - the response code is 201, and the response body is the created product object
 
-- GET request to /products:
+- GET request to /products
     - return a collection of all products
     - the response code is 200, and the response body is an array of all product objects ordered by their ids in increasing order
 
-- PATCH request to /products/<id>:
+- PATCH request to /products/<id>:id
     - you can assume that the body sent to this patch request will always be {"isPublished" : true}
     - if the matching product exists, it should validate if the product can be published based on the following criteria in the same order they are mentioned below: 
         - CRITERIA 1: check if the mrp property of the matching product is greater than equal to the selling price of the product
@@ -45,7 +45,7 @@ The task is to implement the REST service that exposes the /products endpoint,
     - you can assume that the ID passed to the request will always be valid
 
 
-- DELETE, PUT request to /products/<id>:
+- DELETE, PUT request to /products/<id>:id
     - the response code is 405 because the API does not allow deleting or modifying products for any id value
 
 You should complete the given project so that it passes all the test cases when running the provided unit tests. The project by default supports the use of the SQLite3 database.
