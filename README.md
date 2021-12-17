@@ -20,7 +20,7 @@ The model implementation is provided and read-only.
 
 The task is to implement the REST service that exposes the /products endpoint, which allows for managing the collection of product records in the following way:
 
-- POST request to /products:
+- POST request to /products
     - creates a new product
     - expects a JSON product object without the id and isPublished property as the body payload. You can assume that the given object is always valid.
     - a new product should always be created with isPublished property set to false
