@@ -1,0 +1,29 @@
+[
+	{
+		"name": "Premium Roast Coffee",
+		"price": 1.19,
+		"mrp": 1.19,
+		"stock": 1
+	},
+	{
+		"name": "Egg Meal",
+		"price": 5.29,
+		"mrp": 4.29,
+		"stock": 1
+	},
+
+	{
+		"name": "Hash Browns",
+		"price": 1.19,
+		"mrp": 1.19,
+		"stock": 0,
+		"isPublished": true
+	},
+
+	{
+		"name": "Hazelnut Latte",
+		"price": 2.29,
+		"mrp": 2.28,
+		"stock": 0
+	}
+]
