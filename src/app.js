@@ -15,6 +15,7 @@ app
 	.use(express.json())
 	.use(cookieParser())
 	.use(express.urlencoded({ extended: false }))
+	.use("/products", router)
 
 app.use("/", (_, res) => {
 	return res.status(300).send("<h1>Products API Medium<h1/>")
