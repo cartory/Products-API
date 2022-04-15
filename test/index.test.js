@@ -5,7 +5,7 @@ const products = require("./products.json")
 const Product = require("../src/models/product")
 
 describe("Products API", () => {
-	beforeEach(async () => await Product.sync({ logging: false, force: true }))
+	beforeEach(async () => await Product.sync({ logging: false }))
 
 	test("should create a new product", async () => {
 		const { statusCode, body } = await request(app).post("/products").send(products[0])
