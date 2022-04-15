@@ -58,19 +58,21 @@ Debe completar el proyecto dado para que pase todos los casos de prueba al ejecu
 **Commands**
 
 -   run:
-
 ```bash
-bash bin/env_setup && . $HOME/.nvm/nvm.sh && npm start
+npm start
+```
+
+-   dev:
+```bash
+npm run dev
 ```
 
 -   install:
-
 ```bash
-bash bin/env_setup && . $HOME/.nvm/nvm.sh && npm install
+npm install
 ```
 
 -   test:
-
 ```bash
-bash bin/env_setup && . $HOME/.nvm/nvm.sh && npm test
+npm test
 ```
